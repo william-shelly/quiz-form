@@ -154,4 +154,9 @@ resetAnswers.addEventListener("click", function() {
     statusMsg.classList.remove('text-danger');
     quizTotal = 0;
     console.log('Total = ' + quizTotal);
+    input0.focus();
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+    input0.focus();
 });
