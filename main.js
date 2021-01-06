@@ -46,7 +46,7 @@ checkAnswers.addEventListener("click", function() {
     for (let i=0; i < answers.length; i++) {
         console.log(answers[i]);
         console.log(inputs[i]);
-        if (inputs[i].value === answers[i]) {
+        if (inputs[i].value.toLowerCase() === answers[i]) {
             inputs[i].classList.remove('border-danger');
             inputs[i].classList.add('border-success');
             inputs[i].classList.remove('text-danger');
