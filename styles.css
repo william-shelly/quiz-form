@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+.background-success {
+    background-color: #b7f9c6!important;
+}
+.background-danger {
+    background-color: #fbd9dd;
+}
