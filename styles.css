@@ -10,31 +10,51 @@
 }
 
 @keyframes lrShake {
-        0% {
-            transform: translateX(0);
-        }
-
-        6.5% {
-            transform: translateX(-2px) rotateY(-5deg);
-        }
-
-        18.5% {
-            transform: translateX(3px) rotateY(4deg);
-        }
-
-        31.5% {
-            transform: translateX(-1px) rotateY(-3deg);
-        }
-
-        43.5% {
-            transform: translateX(1px) rotateY(1deg);
-        }
-
-        50% {
-            transform: translateX(0);
-        }
+    0% {
+        transform: translateX(0);
     }
-    .animate__lrShake {
+
+    6.5% {
+        transform: translateX(-2px) rotateY(-5deg);
+    }
+
+    18.5% {
+        transform: translateX(3px) rotateY(4deg);
+    }
+
+    31.5% {
+        transform: translateX(-1px) rotateY(-3deg);
+    }
+
+    43.5% {
+        transform: translateX(1px) rotateY(1deg);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+}
+.animate__lrShake {
     animation-timing-function: ease-in-out;
     animation-name: lrShake;
+}
+
+@keyframes tbShake {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
     }
+
+    10%,
+    30% {
+      transform: translate3d(0, -2px, 0);
+    }
+
+    20%,
+    40% {
+      transform: translate3d(0, 2px, 0);
+    }
+}
+.animate__tbShake {
+    animation-name: tbShake;
+}

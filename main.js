@@ -55,6 +55,7 @@ checkAnswers.addEventListener("click", function() {
             inputs[i].classList.add('background-success');
             questions[i].classList.remove('text-danger');
             questions[i].classList.add('text-success');
+            questions[i].classList.add('animate__animated','animate__tbShake');
             icons[i].classList.remove('d-none');
             icons[i].classList.remove('fa-times');
             icons[i].classList.remove('text-danger');
@@ -112,6 +113,7 @@ resetAnswers.addEventListener("click", function() {
     input0.classList.remove('background-success');
     input0.classList.remove('background-danger');
     question0.classList.remove('text-success');
+    question0.classList.remove('animate__animated','animate__tbShake');
     question0.classList.remove('text-danger');
     question0.classList.remove('animate__animated','animate__lrShake');
     input1.classList.remove('border-success');
@@ -121,6 +123,7 @@ resetAnswers.addEventListener("click", function() {
     input1.classList.remove('background-success');
     input1.classList.remove('background-danger');
     question1.classList.remove('text-success');
+    question1.classList.remove('animate__animated','animate__tbShake');
     question1.classList.remove('text-danger');
     question1.classList.remove('animate__animated','animate__lrShake');
     input2.classList.remove('border-success');
@@ -130,6 +133,7 @@ resetAnswers.addEventListener("click", function() {
     input2.classList.remove('background-success');
     input2.classList.remove('background-danger');
     question2.classList.remove('text-success');
+    question2.classList.remove('animate__animated','animate__tbShake');
     question2.classList.remove('text-danger');
     question2.classList.remove('animate__animated','animate__lrShake');
     input3.classList.remove('border-success');
@@ -139,6 +143,7 @@ resetAnswers.addEventListener("click", function() {
     input3.classList.remove('background-success');
     input3.classList.remove('background-danger');
     question3.classList.remove('text-success');
+    question3.classList.remove('animate__animated','animate__tbShake');
     question3.classList.remove('text-danger');
     question3.classList.remove('animate__animated','animate__lrShake');
     input4.classList.remove('border-success');
@@ -148,6 +153,7 @@ resetAnswers.addEventListener("click", function() {
     input4.classList.remove('background-success');
     input4.classList.remove('background-danger');
     question4.classList.remove('text-success');
+    question4.classList.remove('animate__animated','animate__tbShake');
     question4.classList.remove('text-danger');
     question4.classList.remove('animate__animated','animate__lrShake');
     icon0.classList.add('d-none');
