@@ -44,8 +44,8 @@ checkAnswers.addEventListener("click", function() {
     quizTotal = 0;
 
     for (let i=0; i < answers.length; i++) {
-        console.log(answers[i]);
-        console.log(inputs[i]);
+//        console.log(answers[i]);
+//        console.log(inputs[i]);
         if (inputs[i].value.toLowerCase() === answers[i]) {
             inputs[i].classList.remove('border-danger');
             inputs[i].classList.add('border-success');
@@ -61,10 +61,10 @@ checkAnswers.addEventListener("click", function() {
             icons[i].classList.add('fa-check');
             icons[i].classList.add('text-success');
             quizTotal ++;
-            console.log(quizTotal);
+//            console.log(quizTotal);
 
         } else {
-            console.log("WRONG!" + " . " + inputs[i].value + " . " + answer0);
+//            console.log("WRONG!" + " . " + inputs[i].value + " . " + answer0);
             inputs[i].classList.remove('border-success');
             inputs[i].classList.add('border-danger');
             inputs[i].classList.remove('text-black-50');
@@ -81,7 +81,7 @@ checkAnswers.addEventListener("click", function() {
         }
     }
 
-    console.log('Total = ' + quizTotal);
+//    console.log('Total = ' + quizTotal);
     if ( quizTotal === 5 ) {
         statusMsg.classList.remove('d-none');
         statusMsg.classList.remove('fs-3');
@@ -153,7 +153,7 @@ resetAnswers.addEventListener("click", function() {
     statusMsg.classList.remove('text-success');
     statusMsg.classList.remove('text-danger');
     quizTotal = 0;
-    console.log('Total = ' + quizTotal);
+//    console.log('Total = ' + quizTotal);
     input0.focus();
 });
 
