@@ -91,6 +91,7 @@ checkAnswers.addEventListener("click", function() {
         statusMsg.classList.add('fs-5');
         statusMsg.classList.add('text-success');
         statusMsg.classList.add('background-success');
+        statusMsg.classList.add('animate__animated','animate__tbShake');
         statusMsg.innerText = "100% Correct! What a genius!!!"
     } else {
         statusMsg.classList.remove('d-none');
@@ -99,6 +100,7 @@ checkAnswers.addEventListener("click", function() {
         statusMsg.classList.add('fs-3');
         statusMsg.classList.add('text-danger');
         statusMsg.classList.add('background-danger');
+        statusMsg.classList.add('animate__animated','animate__lrShake');
         statusMsg.innerText = "You have answered " + quizTotal + " of " + questionsTotal + " questions correct."
     }
     return false;
@@ -168,6 +170,9 @@ resetAnswers.addEventListener("click", function() {
     statusMsg.classList.remove('text-danger');
     statusMsg.classList.remove('background-success');
     statusMsg.classList.remove('background-danger');
+    statusMsg.classList.remove('animate__animated','animate__tbShake');
+    statusMsg.classList.remove('animate__animated','animate__lrShake');
+
     quizTotal = 0;
 //    console.log('Total = ' + quizTotal);
     input0.focus();
