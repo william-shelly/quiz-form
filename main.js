@@ -73,6 +73,7 @@ checkAnswers.addEventListener("click", function() {
             inputs[i].classList.add('background-danger');
             questions[i].classList.remove('text-success');
             questions[i].classList.add('text-danger');
+            questions[i].classList.add('animate__animated','animate__lrShake');
             icons[i].classList.remove('d-none');
             icons[i].classList.remove('fa-check');
             icons[i].classList.remove('text-success');
@@ -88,6 +89,7 @@ checkAnswers.addEventListener("click", function() {
         statusMsg.classList.remove('text-danger');
         statusMsg.classList.add('fs-5');
         statusMsg.classList.add('text-success');
+        statusMsg.classList.add('background-success');
         statusMsg.innerText = "100% Correct! What a genius!!!"
     } else {
         statusMsg.classList.remove('d-none');
@@ -95,6 +97,7 @@ checkAnswers.addEventListener("click", function() {
         statusMsg.classList.remove('text-success');
         statusMsg.classList.add('fs-3');
         statusMsg.classList.add('text-danger');
+        statusMsg.classList.add('background-danger');
         statusMsg.innerText = "You have answered " + quizTotal + " of " + questionsTotal + " questions correct."
     }
     return false;
@@ -110,6 +113,7 @@ resetAnswers.addEventListener("click", function() {
     input0.classList.remove('background-danger');
     question0.classList.remove('text-success');
     question0.classList.remove('text-danger');
+    question0.classList.remove('animate__animated','animate__lrShake');
     input1.classList.remove('border-success');
     input1.classList.remove('border-danger');
     input1.classList.remove('text-black-50');
@@ -118,6 +122,7 @@ resetAnswers.addEventListener("click", function() {
     input1.classList.remove('background-danger');
     question1.classList.remove('text-success');
     question1.classList.remove('text-danger');
+    question1.classList.remove('animate__animated','animate__lrShake');
     input2.classList.remove('border-success');
     input2.classList.remove('border-danger');
     input2.classList.remove('text-black-50');
@@ -126,6 +131,7 @@ resetAnswers.addEventListener("click", function() {
     input2.classList.remove('background-danger');
     question2.classList.remove('text-success');
     question2.classList.remove('text-danger');
+    question2.classList.remove('animate__animated','animate__lrShake');
     input3.classList.remove('border-success');
     input3.classList.remove('border-danger');
     input3.classList.remove('text-black-50');
@@ -134,6 +140,7 @@ resetAnswers.addEventListener("click", function() {
     input3.classList.remove('background-danger');
     question3.classList.remove('text-success');
     question3.classList.remove('text-danger');
+    question3.classList.remove('animate__animated','animate__lrShake');
     input4.classList.remove('border-success');
     input4.classList.remove('border-danger');
     input4.classList.remove('text-black-50');
@@ -142,6 +149,7 @@ resetAnswers.addEventListener("click", function() {
     input4.classList.remove('background-danger');
     question4.classList.remove('text-success');
     question4.classList.remove('text-danger');
+    question4.classList.remove('animate__animated','animate__lrShake');
     icon0.classList.add('d-none');
     icon1.classList.add('d-none');
     icon2.classList.add('d-none');
@@ -152,6 +160,8 @@ resetAnswers.addEventListener("click", function() {
     statusMsg.classList.remove('fs-5');
     statusMsg.classList.remove('text-success');
     statusMsg.classList.remove('text-danger');
+    statusMsg.classList.remove('background-success');
+    statusMsg.classList.remove('background-danger');
     quizTotal = 0;
 //    console.log('Total = ' + quizTotal);
     input0.focus();
